@@ -1,12 +1,16 @@
 workflows:
-  sample-workflow-id:
+  sample-workflow:
+    name: Codemagic Sample Workflow
+    max_build_duration: 120
+    instance_type: mac_mini_m1
+    environment: 
+      # ...
     scripts: 
       # ...
     publishing: 
       email:
         recipients:
-          - user_1@example.com
-          - user_2@example.com
+          - imanhavangi20@gmail.com
         notify:
           success: true
           failure: false
