@@ -1,7 +1,5 @@
 workflows:
   sample-workflow-id:
-    environment: 
-      # ...
     scripts: 
       # ...
     publishing: 
