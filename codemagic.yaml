@@ -1,12 +1,17 @@
 workflows:
-    sample-workflow:
-        name: Codemagic Sample Workflow
-        max_build_duration: 120
-        instance_type: mac_mini_m1
-    publishing:
-        email:
-            recipients:
-                - imanhavangi20@gmail.com
-            notify:
-                success: false # To not receive a notification when a build succeeds
-                failure: false # To not receive a notification when a build fails
+  sample-workflow-id:
+    name: Codemagic Sample Workflow
+    max_build_duration: 120
+    instance_type: mac_mini_m1
+    environment: 
+      # ...
+    scripts: 
+      # ...
+    publishing: 
+      email:
+        recipients:
+          - user_1@example.com
+          - user_2@example.com
+        notify:
+          success: true
+          failure: false
